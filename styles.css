@@ -1,0 +1,170 @@
+/* Fuente personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap');
+
+/* Estilos globales */
+body {
+    padding-top: 70px; /* Ajuste para navbar fijo */
+    font-family: 'Fira Code', monospace;
+    color: #333;
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    color: #000000; /* Texto negro */
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #000000; /* Fondo negro */
+    padding: 12px 0;
+}
+
+.navbar .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .social-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar .social-icons li {
+    margin-right: 15px;
+}
+
+.navbar .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.navbar .social-icons a:hover {
+    transform: scale(1.2);
+    color: #ff0000; /* Rojo al pasar el ratón */
+}
+
+.nav-item a:hover {
+    color: #ff0000; /* Rojo al pasar el ratón */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: color 0.3s;
+    color: white; /* Texto blanco */
+}
+
+.nav-link.active {
+    color: red !important; /* Cambia el color a tu preferencia */
+    font-weight: bold;
+}
+
+img.rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hola-text {
+    position: relative;
+    left: -200px; /* Ajusta este valor para moverlo más a la izquierda */
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+@media (max-width: 768px) {
+    .hola-text {
+        left: 0; /* Elimina el desplazamiento */
+        text-align: center; /* Alinea al centro */
+    }
+}
+
+.intro{
+    font-weight: bold;
+}
+
+.descripción{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to top, red, #8b0000); /* Gradiente rojo */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-style: bold;
+}
+
+
+/* Secciones */
+section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .navbar .social-icons {
+        margin-top: 10px;
+    }
+
+    .navbar .social-icons a {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+}
+
+.button-container {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.button {
+    background-color: red; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición suave en hover */
+}
+
+.button:hover {
+    background-color: #8b0000; /* Color del fondo cuando el botón está en hover */
+}
